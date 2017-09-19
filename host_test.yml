@@ -2,8 +2,10 @@
 - hosts: all
   become: true
   vars:
-    hosts_add_basic_ipv6: true
+    hosts_add_basic_ipv6: false
+    hosts_add_default_ipv4: true
     hosts_add_ansible_managed_hosts: true
+    hosts_file_backup: true
     hosts_entries:
        - name: testx
-         ip: 216.34.181.45
+         ip: 192.168.0.2
