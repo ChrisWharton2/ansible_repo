@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: true
+  vars:
+    hosts_add_basic_ipv6: true
+    hosts_add_ansible_managed_hosts: true
+    hosts_entries:
+       - name: testx
+         ip: 216.34.181.45
