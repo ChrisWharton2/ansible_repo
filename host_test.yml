@@ -9,5 +9,5 @@
     hosts_entries:
        - name: testx
          ip: 192.168.0.2
-    roles:
-    - bertvv.hosts
+    
+    - { role: hosts }
