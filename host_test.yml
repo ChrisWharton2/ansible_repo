@@ -10,4 +10,4 @@
        - name: testx
          ip: 192.168.0.2
   roles:
-    - role: hosts
+    - role: bertvv.hosts
