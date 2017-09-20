@@ -1,0 +1,12 @@
+---
+- hosts: HDPC.cjlss.co.uk
+  vars:
+    var1: 80
+  tasks:
+  - name: Package list
+    shell: apt list --installed >/tmp/pkg.lst
+
+  - fetch: src=/tmp/pkg.lst dest=prefix-{{ inventory_hostname }} flat=yes
+
+
+
