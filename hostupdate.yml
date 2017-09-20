@@ -1,3 +1,5 @@
+---
+- hosts: all
 - name: "Build hosts file"
   become: true
   lineinfile:   dest=/etc/hosts.test 
