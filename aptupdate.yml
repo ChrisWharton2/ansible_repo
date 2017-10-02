@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   tasks:
-
+- name: Update repositories cache 
    apt:
-    name: update cache
+    name: foo
     update_cache: yes
