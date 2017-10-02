@@ -1,6 +1,7 @@
 ---
 - hosts: all
   become: yes
+-name: Update APT  
   tasks:
   apt:
     update_cache: yes
