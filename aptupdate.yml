@@ -4,5 +4,4 @@
   tasks:
 - name: Update APT Applications 
   apt:
-    name: "*"
-    state: latest
+    update_cache: yes
