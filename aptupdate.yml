@@ -1,7 +1,9 @@
 ---
 - hosts: all
+  vars:
   become: yes
--name: Update APT  
+  
   tasks:
+  -name: Update APT  
   apt:
     update_cache: yes
