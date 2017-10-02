@@ -1,4 +1,5 @@
 ---
 - hosts: all
+  tasks:
   apt:
-    update_cache: yes
+  update_cache: yes
